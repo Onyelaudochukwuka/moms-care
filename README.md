@@ -57,9 +57,9 @@ yarn dev
     ├── server ──├── server side rendering
     └── ...      └──package.json    # Contains all dependencies
 
-## Learn More About ReactNative and setting up and Expo Managed workflow
+## Learn More About Vue and setting up and Mongodb database
 
-To learn more about ReactNative and Expo, take a look at the following resources:
+To learn more about Vue and Mongodb, take a look at the following resources:
 
 - [Vue Documentation](https://vuejs.org/guide/introduction.html) - Learn about Vue and it's installation.
 - [Mongodb Documentation](https://www.mongodb.com/docs/?_ga=2.228343002.63394232.1655107086-2041737808.1655107086) - Learn about Mongodb and it's usage
