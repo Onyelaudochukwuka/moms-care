@@ -7,13 +7,13 @@ import userRoutes from './routes/users.js';
 import dotenv from 'dotenv';
 dotenv.config();
 const app = express();
-
-app.use('/posts', postRoutes);
-app.use('/user', userRoutes);
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
+
+app.use('/posts', postRoutes);
+app.use('/user', userRoutes);
 const CONNECTION_URL = `mongodb+srv://${process.env.USERNAME.toLowerCase()}:${process.env.PASSWORD}@cluster0.bmcxh.mongodb.net/?retryWrites=true&w=majority`;
 const PORT = process.env.PORT || 5000;
 
